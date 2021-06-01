@@ -1,0 +1,20 @@
+.tips{
+    padding-bottom: 1px;
+    padding-top: 32px;
+    &_blue-bg{
+        background: rgba(8, 128, 148, 0.5);
+    }
+    &__title-main{
+        font-size: 44px;
+        font-weight: 700;
+    }
+    &__text{
+        font-size: 24px;
+        margin-bottom: 45px;
+    }
+    &__title{
+        font-size: 34px;
+        font-weight: 500;
+        margin-bottom: 45px;
+    }
+}

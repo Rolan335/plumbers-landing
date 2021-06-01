@@ -1,0 +1,20 @@
+.hero{
+    height: 450px;
+    padding-top: 40px;
+    background: url("../img/hero/bg.png") 50% 50% / cover;
+    &__title{
+        font-size: 45px;
+        color: #EDA30A;
+        font-weight: 600;
+    }
+    &__text{
+        font-size: 34px;
+    }
+    &__link{
+        padding: 6px 36px;
+        color: #1e1e1e !important;
+        font-weight: 500;
+        background: rgba(255, 255, 255, 0.37);
+        border-radius: 20px;    
+    }
+}
