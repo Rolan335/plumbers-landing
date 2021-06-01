@@ -1,0 +1,15 @@
+.call{
+    padding-top: 190px;
+    &__title{
+        font-size: 34px;
+        font-weight: 600;
+        margin-bottom: 30px;
+    }
+    &__text{
+        font-size: 34px;
+        font-weight: 500;
+        &_bold{
+            font-weight: 700;
+        }
+    }
+}

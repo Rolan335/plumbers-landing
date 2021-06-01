@@ -113,6 +113,8 @@ a:visited {
 .about .block-list {
   height: 442px;
   background: url("../img/about/bg.png") 50% 50%/cover;
+}
+.about .block-list .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -151,4 +153,44 @@ a:visited {
   font-size: 34px;
   font-weight: 500;
   margin-bottom: 45px;
+}
+
+.services {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+.services_bg-blue {
+  background-color: rgba(8, 128, 148, 0.5);
+}
+.services__title {
+  font-size: 44px;
+  font-weight: 700;
+  margin-bottom: 45px;
+}
+.services__item {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 66px;
+}
+.services .row {
+  margin-top: 90px;
+}
+.services .img-wrapper {
+  width: 470px;
+}
+
+.call {
+  padding-top: 190px;
+}
+.call__title {
+  font-size: 34px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.call__text {
+  font-size: 34px;
+  font-weight: 500;
+}
+.call__text_bold {
+  font-weight: 700;
 }

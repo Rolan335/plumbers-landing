@@ -1,0 +1,23 @@
+.services{
+    padding-top: 20px;
+    padding-bottom: 40px;
+    &_bg-blue{
+        background-color: rgba(8, 128, 148, 0.5);;
+    }
+    &__title{
+        font-size: 44px;
+        font-weight: 700;
+        margin-bottom: 45px;
+    }
+    &__item{
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 66px;
+    }
+    .row{
+        margin-top: 90px;
+    }
+    .img-wrapper{
+        width: 470px;
+    }
+}
