@@ -66,6 +66,7 @@ a:hover {
   padding: 10px 20px;
   border: 2px solid #404040;
   border-radius: 50px;
+  text-align: center;
 }
 .header .header-bottom {
   -webkit-box-pack: justify;
@@ -110,7 +111,32 @@ a:hover {
 .hero {
   min-height: 470px;
   padding-top: 40px;
-  background: url("../img/hero/bg.png") 50% 50%/cover;
+  background: url("../img/hero/bg.webp") 50% 50%/cover;
+  position: relative;
+}
+.hero .container {
+  position: relative;
+  z-index: 1;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.3);
+  display: none;
+}
+@media (max-width: 992px) {
+  .hero::before {
+    display: block;
+  }
+}
+@media (min-width: 1600px) {
+  .hero {
+    min-height: 600px;
+  }
 }
 .hero__title {
   font-size: 45px;
@@ -140,7 +166,8 @@ a:hover {
 }
 .about .block-list {
   height: 442px;
-  background: url("../img/about/bg.png") 50% 50%/cover;
+  background: url("../img/about/bg.webp") 50% 50%/cover;
+  position: relative;
 }
 .about .block-list .container {
   display: -webkit-box;
@@ -152,6 +179,25 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.about .block-list .container {
+  position: relative;
+  z-index: 1;
+}
+.about .block-list::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: none;
+}
+@media (max-width: 992px) {
+  .about .block-list::before {
+    display: block;
+  }
 }
 .about .block-list__list {
   margin-top: 40px;
@@ -206,6 +252,11 @@ a:hover {
 }
 .services .img-wrapper {
   width: 470px;
+}
+@media (max-width: 992px) {
+  .services .img-wrapper {
+    display: none;
+  }
 }
 
 .call {

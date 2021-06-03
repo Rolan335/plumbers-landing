@@ -19,5 +19,8 @@
     }
     .img-wrapper{
         width: 470px;
+        @include lg{
+            display: none;
+        }
     }
 }
