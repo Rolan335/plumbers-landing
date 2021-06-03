@@ -1,8 +1,9 @@
 .header{
     background-color: #1e1e1e;
     color: #fff;
+    padding-top: 25px;
     .header-top{
-        height: 100px;
+        min-height: 100px;
         &__logo{
             margin-right: 10px;
         }
@@ -10,6 +11,7 @@
             font-size: 31px;
         }
         &__icon{
+
             margin-right: 20px;
             svg{
                 fill: #EDA30A;
@@ -21,6 +23,9 @@
             align-items: center;
             border-right: 2px solid #404040;
             padding-right: 50px;
+            @include lg{
+                border: none;
+            }
         }
         &__adress{
             margin-bottom: 0;
@@ -37,6 +42,7 @@
         justify-content: space-between;
         border-top: 2px solid #404040;
         align-items: center;
+        position: relative;
         .navbar{
             background-color: #1e1e1e !important;
             .nav-link{
@@ -45,8 +51,25 @@
             }
         }
         &__icon{
+            position: absolute;
+            right: 5px;
+            top: 50%;
+            transform: translateY(-50%);
             width: 16px;
             height: 24px;
         }
+    .navbar-toggler{
+    border: none;
+    &:focus,
+    &:active,
+    .navbar-toggler-icon:focus {
+    outline: none ;
+    box-shadow: none;
+    border: none;
+            }
+        }
+    .navbar-toggler-icon{
+        stroke: #fff !important;
+    }
     }
 }

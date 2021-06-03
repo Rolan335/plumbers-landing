@@ -13,6 +13,9 @@ a{
     color: inherit;
     text-decoration: none;
     &:visited{
-        color: inherit;
+        color: inherit !important;
+    }
+    &:hover{
+        color: #fff !important;
     }
 }

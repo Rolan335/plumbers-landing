@@ -1,0 +1,37 @@
+.footer{
+    background-color: rgba(7, 90, 124, 0.8);
+    padding-top: 50px;
+    padding-bottom: 25px;
+    iframe{
+        width: 420px;
+        height: 300px;
+        @include md{
+            width: 330px;
+        }
+    }
+    &__title{
+        font-size: 30px;
+        color: #fff;
+        margin-left: 10px;
+    }
+    &__list{
+        margin-top: 15px;
+        list-style: none;
+        padding-left: 0;
+    }
+    &__item{
+        font-size: 22px;
+        color: #EDA30A;
+        &_bold{
+            font-weight: 700;
+        }
+    }
+    &__text{
+        font-size: 22px;
+        color: #fff;
+        margin-bottom: 10px;
+        &_bold{
+            font-weight: 700;
+        }
+    }
+}
